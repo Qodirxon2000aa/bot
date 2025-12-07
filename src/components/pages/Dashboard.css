@@ -92,7 +92,7 @@ body {
 /* Share tugmasi (Telegram) */
 .share-btn {
   max-width: 500px;
-  margin: 30px auto;
+  margin: 20px auto;
   background: linear-gradient(45deg, #00d4ff, #0088cc);
   color: white;
   border-radius: 50px;
@@ -106,7 +106,6 @@ body {
   box-shadow: 0 12px 30px rgba(0, 212, 255, 0.5);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
-  padding: 0 30px;
 }
 
 .share-btn:hover {
