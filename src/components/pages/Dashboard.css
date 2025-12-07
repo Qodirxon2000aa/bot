@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  text-align: center;
   box-sizing: border-box;
 }
 
@@ -39,6 +40,8 @@ body {
 
 /* Floating tugmalar (Stars va Premium) */
 .floating-buttons {
+    text-align: center;
+
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -140,6 +143,7 @@ body {
   }
 
   .floating-buttons {
+    text-align: center;
     gap: 15px;
     margin: -30px auto 25px auto;
   }
@@ -197,6 +201,8 @@ body {
   }
 
   .floating-buttons {
+    text-align: center;
+
     gap: 40px;
     margin-top: -60px;
   }
