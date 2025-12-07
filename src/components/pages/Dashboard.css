@@ -128,7 +128,48 @@ body {
 
 /* Gifts komponenti (pastki qism) */
 .gifts-container {
+ 
+
   margin-top: 20px;
+  width: 100%;
+}
+.gifts-btn {
+  margin-top: 15px;
+  width: 100%;
+  background: linear-gradient(135deg, #ff00c3, #ff5e7e);
+  max-width: 500px;
+  margin: 30px auto;
+  color: white;
+  border-radius: 50px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: 0 12px 30px rgba(0, 212, 255, 0.5);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  padding: 0 30px;
+
+
+}
+.gifts-btn img {
+ width: 60px;
+  height: 60px;
+  filter: drop-shadow(0 3px 6px rgba(0,0,0,0.3));
+}
+.gifts-btn span {
+  flex: 1;
+  text-align: center;
+  font-size: 20px;
+  margin-left: -15px;
+}
+.gifts-btn:hover {
+  transform: scale(1.03);
+    background: linear-gradient(135deg, #ff00c3, #ff5e7e);
+
 }
 
 /* RESPONSIVE – Barcha qurilmalar uchun */

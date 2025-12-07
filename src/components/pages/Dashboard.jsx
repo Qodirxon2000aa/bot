@@ -4,10 +4,15 @@ import Reklama from "../pages/Reklama/Reklama.jsx";
 import Premuim from "../../assets/prem.ico";
 import Star from "../../assets/stars.ico";
 import Telegram from "../../assets/tg.ico";
-import Gifts from "../pages/Gifts/Gifts.jsx";
-import Header from "../pages/Header/Header.jsx"; // yangi komponentni import qilamiz
+import Header from "../pages/Header/Header.jsx";
+import Heart from "../../assets/gifts/heart.png";
+
+// ⭐ navigate ishlashi uchun shart
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
+  const navigate = useNavigate(); // ⭐ navigate endi ishlaydi!
+
   const demoUser = {
     name: "John Doe",
     image: "/default-avatar.png",
@@ -18,16 +23,11 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard">
-      {/* Header */}
       <Header user={user} />
 
-      {/* Big central card */}
-     
-        <Reklama />
-      
+      <Reklama />
       <br /><br />
 
-      {/* Two floating buttons */}
       <div className="floating-buttons">
         <div className="float-btn left-btn">
           <img src={Premuim} alt="star" />
@@ -39,14 +39,16 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {/* Share button */}
       <div className="share-btn">
         <img src={Telegram} alt="telegram" className="tg-icon" />
         <span>Share link to friends</span>
       </div>
 
-      {/* Bottom grid */}
-      <Gifts />
+      {/* ⭐ Gifts Page Button (end HAVE WORKS!) */}
+      <div className="gifts-btn" onClick={() => navigate("/gifts")}>
+        <img src={Heart} alt="gift" className="gift-icon" />
+        <span>Gifts Page</span>
+      </div>
     </div>
   );
 };

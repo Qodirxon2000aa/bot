@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Dashboard from "./components/pages/Dashboard";
+import Gifts from "./components/pages/Gifts/Gifts";
 
 // Agar boshqa sahifalar qo'shmoqchi bo'lsangiz, shu yerga import qiling
 // import Settings from "./components/pages/Settings";
@@ -14,6 +15,8 @@ function App() {
 
         {/* 2. Asosiy sahifalar (Layout siz) */}
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/gifts" element={<Gifts />} />
+
         {/* Misollar (kerak bo'lsa ochib qo'ying) */}
         {/* <Route path="/settings" element={<Settings />} /> */}
         {/* <Route path="/profile" element={<Profile />} /> */}
