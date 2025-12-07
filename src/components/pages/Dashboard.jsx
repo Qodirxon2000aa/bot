@@ -22,10 +22,9 @@ const Dashboard = () => {
       <Header user={user} />
 
       {/* Big central card */}
-      <div className="reklama">
+     
         <Reklama />
-      </div>
-
+      
       <br /><br />
 
       {/* Two floating buttons */}
