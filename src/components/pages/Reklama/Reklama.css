@@ -14,6 +14,7 @@
 }
 
 .reklama-slide {
+  
   flex: 0 0 100%;
   padding: 18px;
   box-sizing: border-box;
@@ -51,6 +52,7 @@
 }
 
 .ad-emoji {
+  
   font-size: 28px;
   text-align: center;
   animation: bounce 2.2s infinite;
@@ -93,7 +95,7 @@
 
 .carousel-dots {
   position: absolute;
-  bottom: 12px;
+  bottom: 1px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
