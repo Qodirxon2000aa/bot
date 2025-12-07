@@ -26,8 +26,14 @@ const Dashboard = () => {
       <Header user={user} />
 
       <Reklama />
-      <br /><br />
+      
 
+
+      <div className="share-btn">
+        <img src={Telegram} alt="telegram" className="tg-icon" />
+        <span>Share link to friends</span>
+      </div>
+      <br /> <br />
       <div className="floating-buttons">
         <div className="float-btn left-btn">
           <img src={Premuim} alt="star" />
@@ -39,10 +45,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <div className="share-btn">
-        <img src={Telegram} alt="telegram" className="tg-icon" />
-        <span>Share link to friends</span>
-      </div>
+      
 
       {/* ⭐ Gifts Page Button (end HAVE WORKS!) */}
       <div className="gifts-btn" onClick={() => navigate("/gifts")}>
